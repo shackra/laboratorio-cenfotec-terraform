@@ -1,0 +1,26 @@
+# Fdb version 4
+["pdflatex"] 1773886109.0558 "evidencia.tex" "evidencia.pdf" "evidencia" 1773886109.17582 2
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/fonts/tfm/public/cm/cmr10.tfm" 1 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/base/article.cls" 1 20144 b966087dda3b194755eb460d32e2ef75 ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/base/fontenc.sty" 1 5275 2f50a1b91fdc3c2c6ff41843a6854061 ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/base/inputenc.sty" 1 5048 0270515b828149155424600fd2d58ac5 ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/base/size11.clo" 1 8464 f339f4d5391fbe0425b2d94c90e6819e ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/graphics-cfg/graphics.cfg" 1 1224 978390e9c2234eab29404bc21b268d1e ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/graphics-def/pdftex.def" 1 19440 9da9dcbb27470349a580fca7372d454b ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/graphics/graphics.sty" 1 18363 69bb4f5538964bfea50d1e6d89cbe69f ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/graphics/graphicx.sty" 1 8118 43b99e52946c33a23f5f43b52d5cc5ec ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/graphics/keyval.sty" 1 2671 d9941f4bf4750e9b0603c9a2ec54693b ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/graphics/trig.sty" 1 4023 e66acf578d6b564c4670fb57ff336a7a ""
+  "/nix/store/mmw33x1zjx3cvl9ik93yafslxc4cg78q-texlive-combined-medium-2025.20250703-texmfdist/tex/latex/tools/longtable.sty" 1 15912 618223a798a4d829f4d8e1ccf24e518f ""
+  "/nix/store/rfp20xx4d4kwn6h4rhcl30bn93hs9k91-texlive-combined-medium-2025.20250703/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 3398170 3df4cb0a2e05c60fdfd4c0df92d98696 ""
+  "/nix/store/rfp20xx4d4kwn6h4rhcl30bn93hs9k91-texlive-combined-medium-2025.20250703/share/texmf-var/web2c/texmf.cnf" 1 44519 1a82bd693e3d6290c9d8af066e38cfad ""
+  "evidencia.aux" 1773886101.05385 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "evidencia.tex" 1773886108.94485 9172 3fecee019fe6dbbb29258e64a6364be5 ""
+  "wrapfig.sty" 0 -1 0 ""
+  (generated)
+  "evidencia.aux"
+  "evidencia.log"
+  "evidencia.pdf"
+  (rewritten before read)

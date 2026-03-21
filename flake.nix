@@ -48,6 +48,7 @@
               # Add the flake's formatter to your project's environment
               self.formatter.${system}
 	      nixd
+              awscli2
 
               # Other packages
               terraform

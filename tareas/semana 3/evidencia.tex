@@ -1,0 +1,195 @@
+% Created 2026-03-18 mié 20:08
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Jorge Javier Araya Navarro <jorge@esavara.cr>}
+\date{\today}
+\title{Evidencia (tarea semana 3)}
+\hypersetup{
+ pdfauthor={Jorge Javier Araya Navarro <jorge@esavara.cr>},
+ pdftitle={Evidencia (tarea semana 3)},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.2 (Org mode 9.7.34)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+Lo presente es la tarea de la semana 3, a presentar en la semana 4.
+
+Provisto esta configuración de Terraform:
+
+\begin{verbatim}
+resource "aws_vpc" "lab-JORGE_JAVIER_ARAYA_NAVARRO" {
+  cidr_block = "10.0.0.0/16"
+}
+\end{verbatim}
+
+Ejecuto \texttt{terraform init}, \texttt{terraform plan} y luego \texttt{terraform apply}:
+
+\begin{verbatim}
+laboratorio-cenfotec-terraform/tareas/semana 3 on  master (c02bedf) [!?] via 💠 default via ❄  impure (nix-shell-env) on ☁  (us-east-2)
+➜  terraform init
+Initializing the backend...
+Initializing provider plugins...
+- Finding latest version of hashicorp/aws...
+- Installing hashicorp/aws v6.37.0...
+- Installed hashicorp/aws v6.37.0 (signed by HashiCorp)
+Terraform has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run "terraform init" in the future.
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+
+laboratorio-cenfotec-terraform/tareas/semana 3 on  master (c02bedf) [!?] via 💠 default via ❄  impure (nix-shell-env) on ☁  (us-east-2) took 19s
+➜  terraform plan
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_vpc.lab-JORGE_JAVIER_ARAYA_NAVARRO will be created
+  + resource "aws_vpc" "lab-JORGE_JAVIER_ARAYA_NAVARRO" {
+      + arn                                  = (known after apply)
+      + cidr_block                           = "10.0.0.0/16"
+      + default_network_acl_id               = (known after apply)
+      + default_route_table_id               = (known after apply)
+      + default_security_group_id            = (known after apply)
+      + dhcp_options_id                      = (known after apply)
+      + enable_dns_hostnames                 = (known after apply)
+      + enable_dns_support                   = true
+      + enable_network_address_usage_metrics = (known after apply)
+      + id                                   = (known after apply)
+      + instance_tenancy                     = "default"
+      + ipv6_association_id                  = (known after apply)
+      + ipv6_cidr_block                      = (known after apply)
+      + ipv6_cidr_block_network_border_group = (known after apply)
+      + main_route_table_id                  = (known after apply)
+      + owner_id                             = (known after apply)
+      + region                               = "us-east-2"
+      + tags_all                             = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
+
+laboratorio-cenfotec-terraform/tareas/semana 3 on  master (c02bedf) [!?] via 💠 default via ❄  impure (nix-shell-env) on ☁  (us-east-2) took 4s
+➜  terraform apply
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_vpc.lab-JORGE_JAVIER_ARAYA_NAVARRO will be created
+  + resource "aws_vpc" "lab-JORGE_JAVIER_ARAYA_NAVARRO" {
+      + arn                                  = (known after apply)
+      + cidr_block                           = "10.0.0.0/16"
+      + default_network_acl_id               = (known after apply)
+      + default_route_table_id               = (known after apply)
+      + default_security_group_id            = (known after apply)
+      + dhcp_options_id                      = (known after apply)
+      + enable_dns_hostnames                 = (known after apply)
+      + enable_dns_support                   = true
+      + enable_network_address_usage_metrics = (known after apply)
+      + id                                   = (known after apply)
+      + instance_tenancy                     = "default"
+      + ipv6_association_id                  = (known after apply)
+      + ipv6_cidr_block                      = (known after apply)
+      + ipv6_cidr_block_network_border_group = (known after apply)
+      + main_route_table_id                  = (known after apply)
+      + owner_id                             = (known after apply)
+      + region                               = "us-east-2"
+      + tags_all                             = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+aws_vpc.lab-JORGE_JAVIER_ARAYA_NAVARRO: Creating...
+aws_vpc.lab-JORGE_JAVIER_ARAYA_NAVARRO: Creation complete after 2s [id=vpc-02f5720343033d1e3]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+\end{verbatim}
+
+¡El recurso VPC ha sido creado de manera exitosa en Amazon Web Services!
+
+Inmediatamente se borra el recurso con \texttt{terraform destroy}:
+
+\begin{verbatim}
+laboratorio-cenfotec-terraform/tareas/semana 3 on  master (c02bedf) [!?] via 💠 default via ❄  impure (nix-shell-env) on ☁  (us-east-2) took 9s
+➜  terraform destroy
+aws_vpc.lab-JORGE_JAVIER_ARAYA_NAVARRO: Refreshing state... [id=vpc-02f5720343033d1e3]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_vpc.lab-JORGE_JAVIER_ARAYA_NAVARRO will be destroyed
+  - resource "aws_vpc" "lab-JORGE_JAVIER_ARAYA_NAVARRO" {
+      - arn                                  = "arn:aws:ec2:us-east-2:367816904393:vpc/vpc-02f5720343033d1e3" -> null
+      - assign_generated_ipv6_cidr_block     = false -> null
+      - cidr_block                           = "10.0.0.0/16" -> null
+      - default_network_acl_id               = "acl-0226e8e7699e603ca" -> null
+      - default_route_table_id               = "rtb-03569f911bba8a214" -> null
+      - default_security_group_id            = "sg-04ea5fa60a6aa9db8" -> null
+      - dhcp_options_id                      = "dopt-069c12649ebed9d9a" -> null
+      - enable_dns_hostnames                 = false -> null
+      - enable_dns_support                   = true -> null
+      - enable_network_address_usage_metrics = false -> null
+      - id                                   = "vpc-02f5720343033d1e3" -> null
+      - instance_tenancy                     = "default" -> null
+      - ipv6_netmask_length                  = 0 -> null
+      - main_route_table_id                  = "rtb-03569f911bba8a214" -> null
+      - owner_id                             = "367816904393" -> null
+      - region                               = "us-east-2" -> null
+      - tags                                 = {} -> null
+      - tags_all                             = {} -> null
+        # (4 unchanged attributes hidden)
+    }
+
+Plan: 0 to add, 0 to change, 1 to destroy.
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+aws_vpc.lab-JORGE_JAVIER_ARAYA_NAVARRO: Destroying... [id=vpc-02f5720343033d1e3]
+aws_vpc.lab-JORGE_JAVIER_ARAYA_NAVARRO: Destruction complete after 1s
+
+Destroy complete! Resources: 1 destroyed.
+\end{verbatim}
+\end{document}
