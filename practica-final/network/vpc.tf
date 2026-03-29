@@ -3,16 +3,16 @@ resource "aws_vpc" "vpc" {
 
   tags = {
     owner = var.tags.owner
-    Name = "VPC ${terraform.workspace}"
+    Name  = "VPC ${terraform.workspace}"
   }
 }
 
 resource "aws_subnet" "subnet" {
-  vpc_id = aws_vpc.vpc.id
-  subnet_cidr = var.subnet_cidr
+  vpc_id     = aws_vpc.vpc.id
+  cidr_block = var.subnet_cidr
 
   tags = {
     owner = var.tags.owner
-    Name = "Subnet ${terraform.workspace}"
+    Name  = "Subnet ${terraform.workspace}"
   }
 }

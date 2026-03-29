@@ -9,11 +9,11 @@ module "network" {
 }
 
 module "infra" {
-  source = "./infra"
-  ami = vars.ami
-  instance = var.instance
+  source   = "./infra"
+  ami      = lookup(var.ami, terraform.workspace)
+  instance = lookup(var.instance, terraform.workspace)
   tags = {
     owner = var.tags.owner
   }
-  subnet_id = aws_
+  subnet_id = module.network.subnet_id
 }
